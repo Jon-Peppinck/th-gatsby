@@ -1,0 +1,16 @@
+* {
+  overflow-x: hidden; // TODO: FIX so 100vw
+}
+
+.full-screen-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  .nav-bar {
+    text-align: center;
+    width: 100vw;
+  }
+  .search-component {
+    padding: calc(50vh - 200px) calc(50vh);
+  }
+}
