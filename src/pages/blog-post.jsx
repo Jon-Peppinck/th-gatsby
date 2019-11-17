@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import config from '../../data/SiteConfig';
-import './index.scss';
 
-export default class MainLayout extends React.Component {
+export default class BlogPost extends Component {
   render() {
     const { children } = this.props;
     return (

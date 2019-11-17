@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../layout';
-import config from '../../data/SiteConfig';
 
-import Header from '../components/Home/Header/Header';
-import Search from '../components/Home/Search/Search';
-import OurCommunity from '../components/Home/OurCommunity/OurCommunity';
+import config from '../../../../data/SiteConfig';
+
+import Header from '../components/Header/Header';
+import Search from '../components/Search/Search';
+import OurCommunity from '../components/OurCommunity/OurCommunity';
 
 import './home.scss';
 
