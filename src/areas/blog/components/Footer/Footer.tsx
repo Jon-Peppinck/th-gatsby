@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import UserLinks from '../UserLinks/UserLinks';
 import './Footer.scss';
 
-class Footer extends Component {
+class Footer extends Component<any> {
   render() {
     const { config } = this.props;
     const url = config.siteRss;

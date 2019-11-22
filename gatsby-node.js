@@ -43,10 +43,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const postPage = path.resolve('src/areas/blog/templates/post.jsx');
-  const tagPage = path.resolve('src/areas/blog/templates/tag.jsx');
-  const categoryPage = path.resolve('src/areas/blog/templates/category.jsx');
-  const listingPage = path.resolve('./src/areas/blog/templates/listing.jsx');
+  const postPage = path.resolve('src/areas/blog/templates/post.tsx');
+  const tagPage = path.resolve('src/areas/blog/templates/tag.tsx');
+  const categoryPage = path.resolve('src/areas/blog/templates/category.tsx');
+  const listingPage = path.resolve('./src/areas/blog/templates/listing.tsx');
 
   // Get a full list of markdown posts
   const markdownQueryResult = await graphql(`

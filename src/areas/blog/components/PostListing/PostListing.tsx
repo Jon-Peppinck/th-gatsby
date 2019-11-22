@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
-class PostListing extends React.Component {
+class PostListing extends Component<any> {
   getPostList() {
-    const postList = [];
-    this.props.postEdges.forEach(postEdge => {
+    const postList: any[] = [];
+    this.props.postEdges.forEach((postEdge: any) => {
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,

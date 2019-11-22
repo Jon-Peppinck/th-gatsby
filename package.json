@@ -4,6 +4,12 @@
   "version": "1.1.0",
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^5.0.14",
+    "@types/react-share": "^3.0.2",
+    "@types/url-join": "^4.0.0",
     "gatsby": "^2.15.28",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-catch-links": "^2.1.12",
@@ -39,8 +45,6 @@
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
     "react-twitter-widgets": "^1.7.1",
-    "tslint": "^5.20.1",
-    "tslint-react": "^4.1.0",
     "url-join": "^4.0.0"
   },
   "devDependencies": {
@@ -58,8 +62,6 @@
     "stylelint": "^11.0.0",
     "stylelint-config-prettier": "^6.0.0",
     "stylelint-config-standard": "^19.0.0",
-    "tslint": "^5.20.0",
-    "tslint-config-prettier": "^1.14.0",
     "write-good": "^1.0.1"
   },
   "keywords": [

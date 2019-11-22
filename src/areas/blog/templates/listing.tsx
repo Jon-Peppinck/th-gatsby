@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import BlogPost from '../../../pages/blog-post';
@@ -7,7 +7,7 @@ import SEO from '../components/SEO/SEO';
 import config from '../../../../data/SiteConfig';
 import './listing.scss';
 
-class Listing extends React.Component {
+class Listing extends Component<any> {
   renderPaging() {
     const { currentPageNum, pageCount } = this.props.pageContext;
     const prevPage = currentPageNum - 1 === 1 ? '/' : `/${currentPageNum - 1}/`;

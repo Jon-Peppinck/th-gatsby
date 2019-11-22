@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import BlogPost from '../../../pages/blog-post';
@@ -12,7 +12,13 @@ import config from '../../../../data/SiteConfig';
 import './b16-tomorrow-dark.scss';
 import './post.scss';
 
-export default class PostTemplate extends React.Component {
+interface Props {
+  data: any;
+  pageContext: any;
+  postSEO: boolean;
+}
+
+export default class PostTemplate extends Component<Props> {
   render() {
     const { data, pageContext } = this.props;
     const { slug } = pageContext;
@@ -30,7 +36,7 @@ export default class PostTemplate extends React.Component {
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
+          <SEO postPath={slug} postNode={postNode} postSEO={true} />
           <div>
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />

@@ -3,8 +3,8 @@ import ReactDisqusComments from 'react-disqus-comments';
 import urljoin from 'url-join';
 import config from '../../../../../data/SiteConfig';
 
-class Disqus extends Component {
-  constructor(props) {
+class Disqus extends Component<{}, { toasts: any }> {
+  constructor(props: any) {
     super(props);
     this.state = {
       toasts: []
@@ -25,7 +25,7 @@ class Disqus extends Component {
   }
 
   render() {
-    const { postNode } = this.props;
+    const { postNode }: any = this.props;
     if (!config.disqusShortname) {
       return null;
     }

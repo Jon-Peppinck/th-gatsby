@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import BlogPost from '../../../pages/blog-post';
 import PostListing from '../components/PostListing/PostListing';
 import config from '../../../../data/SiteConfig';
 
-export default class CategoryTemplate extends React.Component {
+export default class CategoryTemplate extends Component<any> {
   render() {
     const { category } = this.props.pageContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
