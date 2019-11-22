@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Nunito';
+  src: local('FiraSans'),
+    url(../../static/fonts/Nunito-Black.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
+  font-family: 'Nunito';
 }
 
 html {
